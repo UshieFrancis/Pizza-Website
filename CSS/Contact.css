@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Roboto' sans-serif;
+    font-size: 1.1em;
+    overflow-x: hidden;
+}
+
+/* menu navbar */
+#menuList a{
+    padding:  13px;
+    font-family: 'Poppins';
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    line-height: -6px;
+    font-weight: 400;
+  }
+  #navbar{
+      background-color: #f7b733;
+      display: flex;
+      justify-content: space-around;
+      padding: 8px;
+      font-size: medium;
+  }
+  #navbar ul li{
+      display: inline-block;
+      margin-right: 20px;
+      padding-top: 15px;
+  }
+  #navbar a:hover{
+      border-bottom: 2px white solid;
+      color: #FFEFBA;
+  }
+  .logo{
+      width: 50px;
+      cursor: pointer;
+  }
+  .menu-icon{
+    width: 50px;
+    cursor: pointer;
+    display: none;
+  }
+  .order-btn{
+    padding:  11px;
+    border-radius: 4px;
+    font-family: 'poppins';
+    font-size: 1.1rem;
+    background-color: #E1D800;
+    text-transform: uppercase;
+    line-height: -6px;
+    font-weight: 400;
+  }
+
+  /* this is the media querries for navbar */
+@media only screen and (max-width: 768px) {
+    #navbar ul{
+      width: 100%;
+      background-color: black;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      z-index: 2;
+    }
+    #navbar ul li{
+      display: block;
+      padding: 10px;
+    }
+    #navbar ul li a{
+      color: #E1D800;
+    }
+    #navbar a:hover{
+      border-bottom: 2px #E12301;
+      color: #FFEFBA;
+    }
+    .menu-icon{
+      display: block;
+    }
+    #menuList{
+      overflow: hidden;
+      transition: 0.5s;
+    }
+  }
+
+  /* contact */
+  section{
+    background-color: #FFEFBA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .container-contact{
+    background-color: #f7b733;
+    width: 350px;
+    box-shadow: 8px 8px 8px #a9a9, -8px -8px 8px #a9a9;
+    padding: 50px 40px;
+  }
+  h1{
+    text-transform: uppercase;
+    line-height: 5px;
+    font-size: 27px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    color: #E12301;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .contact-details input{
+    display: flex;
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background: 0;
+    color: #a9a9a9;
+    box-shadow: 8px 8px 8px #a9a9;
+  }
+  .contact-details textarea{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5PX;
+    color: #a9a9a9;
+  }
+  .contact-details button{
+    padding: 5px 10px;
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: 300;
+    font-family: 'poppins';
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  .contact-details button a{
+    color: #a9a9a9; 
+  }
+  .contact-details button:hover{
+    background-color: #E12301;
+    transition: all 1.0s;
+  }
+  .contact-details label{
+    font-size: 17px;
+    color: #E12301;
+    margin-bottom: 18px;
+    padding: 5px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: 'poppins';
+  }
+  /* this is the media querries for the contact segment */
+  @media only screen and (max-width: 768px){
+    section{
+      height: 150vh;
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 320px){
+    section{
+      overflow-x: hidden;
+    }
+    .container-contact{
+      box-shadow: none;
+    }
+  }
+  @media only screen and (max-width: 425px){
+    section{
+      height: 120vh;
+    }
+  }
+
+  /* this is the footer */
+  .main-footer .container{
+    margin: 10px 10px 10px;
+    padding: 40px;
+    background-color: #E12301;
+  }
+  .footer-img{
+    width: 8%;
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+  .about-brief{
+    line-height: 1.4;
+    font-size: 0.9em;
+    font-family: 'Poppins' sans-serif;
+  }
+  .main-footer h3{
+    font-family: 'Poppins';
+  }
+  .quick-links{
+    font-size: 0.9em;
+    padding-top: 10px;
+  }
+  .quick-links a{
+    color: black;
+  }
+  .quick-links a:hover{
+    color: lightslategray;
+  }
+  .copyright{
+    padding-bottom: 10px;
+    font-size: 00.9em;
+  }
+  .socials{
+    float: right;
+  }
+  .socials a{
+    background-color: black;
+    padding: 5px 5px 5px;
+    margin: 3px;
+    border-radius: 6px;
+  }
+  .socials .bxl-twitter:hover{
+    color: #1DA1F2;
+    box-shadow: 0px 6px 10px rgb(0, 0, 0, 1.9);
+    transition: all 0.1s;
+    transform:scale(1.2);
+  }
+  .socials .bxl-linkedin:hover{
+    color: #0A66C2;
+    box-shadow: 0px 6px 10px rgb(0, 0, 0, 1.9);
+    transition: all 0.1s;
+    transform:scale(1.2);
+  }
+  .socials .bxl-github:hover{
+    color: #ffffff;
+    box-shadow: 0px 6px 10px rgb(0, 0, 0, 1.9);
+    transition: all 0.1s;
+    transform:scale(1.2);
+  }
+  .socials .bxl-instagram:hover{
+    color: #fbad50;
+    box-shadow: 0px 6px 10px rgb(0, 0, 0, 1.9);
+    transition: all 0.1s;
+    transform:scale(1.2);
+  }
