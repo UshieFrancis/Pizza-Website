@@ -1,0 +1,235 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+  body{
+      font-family: 'Poppins' sans-serif;
+      font-size: 1.1em;
+      overflow-x: hidden;
+  }
+
+  /* about navbar */
+  #menuList a{
+    padding:  13px;
+    font-family: 'Poppins';
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    line-height: -6px;
+    font-weight: 400;
+}
+  #navbar{
+    background-color: #f7b733;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    /* font-family: 'Poppins'; */
+    font-size: medium;
+}
+#navbar ul li{
+    display: inline-block;
+    margin-right: 20px;
+    padding-top: 15px;
+}
+#navbar a:hover{
+    border-bottom: 2px white solid;
+    color: #FFEFBA;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+.menu-icon{
+  width: 50px;
+  cursor: pointer;
+  display: none;
+}
+.order-btn{
+  padding:  11px;
+  border-radius: 4px;
+  font-family: 'poppins';
+  font-size: 1.1rem;
+  background-color: #E1D800;
+  text-transform: uppercase;
+  line-height: -6px;
+  font-weight: 400;
+}
+
+/* this is the media querries for navbar */
+@media only screen and (max-width: 768px) {
+  #navbar ul{
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 2;
+  }
+  #navbar ul li{
+    display: block;
+    padding: 10px;
+  }
+  #navbar ul li a{
+    color: #E1D800;
+  }
+  #navbar a:hover{
+    border-bottom: 2px #E12301;
+    color: #FFEFBA;
+  }
+  .menu-icon{
+    display: block;
+  }
+  #menuList{
+    overflow: hidden;
+    transition: 0.5s;
+  }
+}
+
+/* main-about-us-section */
+section .container{
+    width: 100%;
+}
+section .main-about-showcase{
+    background-image: url('img/man\ making\ pizza.jpg');
+    background-size: cover;
+    opacity: 0.8;
+    height: calc(115vh);
+    padding: 20px 20px 20px;
+    line-height: 1.5;
+}
+section .main-about-showcase:hover{
+  opacity: 1.0;
+}
+.main-about-showcase h1{
+  font-family: 'Poppins';
+  font-size: 2.9em;
+  font-weight: 700;
+  color: #E1D800;
+}
+.main-about-showcase p{
+  font-family: 'Poppins' sans-serif;
+  font-size: 1.5em;
+  color: #E12301;
+  font-weight: 300;
+  line-height: 27px;
+  margin-top: 9px;
+}
+main .container{
+  width: 100%;
+}
+.brief-about{
+  padding: 20px;
+  margin: 0;
+  background-color: #FFEFBA;
+}
+.brief-about h1{
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Poppins';
+}
+.brief-about span{
+  color: #E12301;
+}
+.brief-about h6{
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: 100;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.about-display{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.mission{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.mission h1{
+  color: #E12301;
+}
+
+/* this is the about us media querries */
+@media only screen and (max-width: 768px){
+  body{
+    font-size: 20px;
+  }
+
+}
+
+/* footer section */
+.main-footer .container{
+    /* width: 100%; */
+    margin: 10px 10px 10px;
+    padding: 40px;
+    background-color: #E12301;
+  }
+  .main-footer p{
+    font-family: 'Poppins' sans-serif;
+  }
+  .footer-img{
+    width: 8%;
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+  .about-brief{
+    line-height: 1.4;
+    font-size: 0.9em;
+    font-family: 'Poppins' sans-serif;
+  }
+  .main-footer h3{
+    font-family: 'Poppins';
+  }
+  .quick-links{
+    font-size: 0.9em;
+    padding-top: 10px;
+    
+  }
+  .quick-links a{
+    color: black;
+  }
+  .quick-links a:hover{
+    color: lightslategray;
+  }
+  .copyright{
+    padding-bottom: 10px;
+    font-size: 00.9em;
+  }
+  .socials{
+    float: right;
+  }
+  .socials a{
+    background-color: black;
+    padding: 5px 5px 5px;
+    margin: 3px;
+    border-radius: 6px;
+  }
+  .socials .bxl-twitter:hover{
+    color: #1DA1F2;
+    box-shadow: 0px 6px 10px rgb(0, 0, 0, 1.9);
+    transition: all 0.1s;
+    transform:scale(1.2);
+  }
+  .socials .bxl-linkedin:hover{
+    color: #0A66C2;
+    box-shadow: 0px 6px 10px rgb(0, 0, 0, 1.9);
+    transition: all 0.1s;
+    transform:scale(1.2);
+  }
+  .socials .bxl-github:hover{
+    color: #ffffff;
+    box-shadow: 0px 6px 10px rgb(0, 0, 0, 1.9);
+    transition: all 0.1s;
+    transform:scale(1.2);
+  }
+  .socials .bxl-instagram:hover{
+    color: #fbad50;
+    box-shadow: 0px 6px 10px rgb(0, 0, 0, 1.9);
+    transition: all 0.1s;
+    transform:scale(1.2);
+  }

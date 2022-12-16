@@ -8,8 +8,8 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="CSS/Home.css" />
-    <title>Pizzeria | Home display</title>
+    <title>pizzeria | Gallery display</title>
+    <link rel="stylesheet" href="CSS/Gallery.css" />
     <link rel="shortcut icon" href="img/pizza logo.png" type="image/x-icon" />
   </head>
   <body>
@@ -18,15 +18,16 @@
         <nav id="navbar">
           <img src="img/pizza logo.png" alt="" class="logo" />
           <ul id="menuList">
-            <li><a href="#">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
             <li><a href="About.html">ABOUT</a></li>
             <li><a href="Menu.html">MENU</a></li>
-            <li><a href="Gallerry.html">GALLERY</a></li>
+            <li><a href="#">GALLERY</a></li>
             <li><a href="Contact.html">CONTACT</a></li>
           </ul>
           <a href="#" class="order-btn">START ORDER</a>
           <img
             src="Img/icons8-menu-64.png"
+            alt=""
             class="menu-icon"
             onclick="togglemenu()"
           />
@@ -34,48 +35,23 @@
       </div>
     </header>
 
-    <!-- main section -->
-    <div class="main-section">
-      <div class="main-section-container">
-        <center>
-          <strong
-            ><h1>The Best Pizzas are the ones we eat with FRIENDS.</h1></strong
-          >
-          <p>if pizza can't fix it, it's a serious problem.</p>
-        </center>
-      </div>
-    </div>
-
-    <!-- cards -->
-    <div class="main-card-container">
-      <div class="cards">
-        <div class="card card-1">
-          <img src="img/Pizza cabin23.jpg" width="289px"/>
-        </div>
-        <div class="card card-2">
-          <img src="img/Pizza cabin18.jpg" width="289px"/>
-        </div>
-        <div class="card card-3">
-          <img src="img/Pizza cabin20.jpg" width="289px"/>
-        </div>
-        <div class="card card-4">
-          <img src="img/Pizza cabin21.jpg" width="289px"/>
-        </div>
-        <div class="card card-5">
-          <img src="img/Pizza cabin22.jpg" width="289px"/>
-        </div>
-        <div class="card card-6">
-          <img src="img/Pizza cabin26.jpg" width="289x"/>
-        </div>
-      </div>
-    </div>
-
-    <!-- showcase -->
-    <div class="main-showcase">
+    <!-- galry display -->
+    <main class="galry-display">
       <div class="container">
-        <a href="#" class="btn">START ORDER</a>
+        <div class="img-list">
+          <img src="img/Pizza cabin11.jpeg" alt="" />
+          <img src="img/burger.jpg" alt="" />
+          <img src="img/Pizza cabin12.png" alt="" />
+          <img src="img/Pizza cabin14.png" alt="" />
+          <img src="img/pizza maker01.jpg" alt="" />
+          <img src="img/Pizza cabin20.jpg" alt="" />
+          <img src="img/pizza maker02.jpg" alt="" />
+          <img src="img/Pizza cabin13.png" alt="" />
+          <img src="img/Pizza cabin14.png" alt="" />
+          <img src="img/Pizza cabin10.jpeg" alt="" />
+        </div>
       </div>
-    </div>
+    </main>
 
     <!-- footer -->
     <footer class="main-footer">
@@ -98,18 +74,21 @@
         <div class="quick-links">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="About.html">About</a></li>
             <li><a href="Menu.html">Menu</a></li>
-            <li><a href="Gallerry.html">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="Contact.html">Contact</a></li>
           </ul>
         </div>
         <br />
         <hr />
         <br />
         <div class="copyright">
-          <p>copyright &copy; 2022 All Rights Reserved by <a href="#">PIZZERIA.</a></p>
+          <p>
+            copyright &copy; 2022 All Rights Reserved by
+            <a href="#">PIZZERIA.</a>
+          </p>
         </div>
         <div class="socials">
           <a href="#"><i class="bx bxl-twitter"></i></a>

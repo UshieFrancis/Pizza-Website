@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 * {
   margin: 0;
@@ -12,13 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-/* about navbar */
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
+/* home navbar */
 #menuList a {
   padding: 13px;
   font-family: "Poppins";
@@ -32,7 +25,7 @@ nav {
   display: flex;
   justify-content: space-around;
   padding: 8px;
-  /* font-family: 'Poppins'; */
+  font-family: "Poppins";
   font-size: medium;
 }
 #navbar ul li {
@@ -94,80 +87,119 @@ nav {
   }
 }
 
-/* main-about-us-section */
-section .container {
-  width: 100%;
-}
-section .main-about-showcase {
-  background-image: url("img/man\ making\ pizza.jpg");
+/* main-section */
+.main-section {
+  background: url("img/Pizza\ cabin2.jpeg") no-repeat;
   background-size: cover;
-  opacity: 0.8;
-  height: calc(115vh);
-  padding: 20px 20px 20px;
-  line-height: 1.5;
+  height: calc(100vh);
+  opacity: 77%;
 }
-section .main-about-showcase:hover {
-  opacity: 1;
-}
-.main-about-showcase h1 {
+.main-section-container h1 {
   font-family: "Poppins";
+  padding-top: 90px;
+  width: 80%;
   font-size: 2.9em;
   font-weight: 700;
   color: #e1d800;
 }
-.main-about-showcase p {
+.main-section-container p {
   font-family: "Poppins" sans-serif;
-  font-size: 1.5em;
+  font-size: 2.1em;
   color: #e12301;
   font-weight: 300;
-  line-height: 27px;
-  margin-top: 9px;
+  width: 40%;
 }
-main .container {
-  width: 100%;
-}
-.brief-about {
-  padding: 20px;
-  margin: 0;
-  background-color: #ffefba;
-}
-.brief-about h1 {
-  text-align: center;
-  font-weight: 600;
-  font-family: "Poppins";
-}
-.brief-about span {
-  color: #e12301;
-}
-.brief-about h6 {
-  text-align: center;
-  font-family: "Poppins";
-  font-weight: 100;
-  font-size: 0.9rem;
-  margin-bottom: 10px;
-}
-.about-display {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-}
-.mission {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-}
-.mission h1 {
-  color: #e12301;
-}
-
-/* this is the about us media querries */
+/* this is the  media querries for main-section*/
 @media only screen and (max-width: 768px) {
-  body {
-    font-size: 20px;
+  .main-section-container h1 {
+    padding: 30px 5px 15px 5px;
+    font-size: 28px;
+  }
+  .main-section-container p {
+    width: 80%;
+    opacity: 20px;
+    padding-top: 15px;
+  }
+}
+@media only screen and (min-width: 320px) {
+  * {
+    /* overflow-x: hidden; */
   }
 }
 
-/* footer section */
+/* cards */
+.main-card-container {
+  display: flex;
+  padding: 30px;
+  background-color: #ffefba;
+  width: 100vw;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.card {
+  padding: 20px;
+  margin: 15px;
+  min-height: 200px;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgb(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+.card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.7);
+  transform: scale(1.02);
+}
+/* this is the media queries for cards */
+@media only screen and (max-width: 768px) {
+  .cards {
+    justify-content: center;
+  }
+  .main-card-container {
+    /* width: 100%; */
+    /* margin-top: 0; */
+  }
+}
+
+/* showcase */
+.main-showcase {
+  background-image: url("img/Pizza\ cabin11.jpeg");
+  background-size: cover;
+  height: calc(90vh);
+  border-radius: 30px;
+}
+.main-showcase .container {
+  display: flex;
+  font-family: "Poppins";
+  justify-content: center;
+  padding: 8px;
+}
+.main-showcase .btn {
+  background-color: #f7b733;
+  padding: 8px;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 150px;
+}
+.btn:hover {
+  color: #ffefba;
+  width: 130px;
+  align-items: center;
+  justify-content: center;
+  transition: all 2.1s;
+}
+/* this the media querries for showcase/main-showcase */
+@media only screen and (max-width: 768px) {
+  .main-showcase {
+    width: 100%;
+  }
+}
+
+/* footer */
 .main-footer .container {
   /* width: 100%; */
   margin: 10px 10px 10px;
@@ -177,6 +209,9 @@ main .container {
 .main-footer p {
   font-family: "Poppins" sans-serif;
 }
+.main-footer h3 {
+  font-family: "Poppins";
+}
 .footer-img {
   width: 8%;
   padding-bottom: 10px;
@@ -185,10 +220,6 @@ main .container {
 .about-brief {
   line-height: 1.4;
   font-size: 0.9em;
-  font-family: "Poppins" sans-serif;
-}
-.main-footer h3 {
-  font-family: "Poppins";
 }
 .quick-links {
   font-size: 0.9em;
@@ -236,4 +267,22 @@ main .container {
   box-shadow: 0px 6px 10px rgb(0, 0, 0, 1.9);
   transition: all 0.1s;
   transform: scale(1.2);
+}
+
+/* this is the media querries for footer */
+@media only screen and (max-width: 768px) {
+  .main-footer .container {
+    width: 100%;
+  }
+  .main-footer p {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Poppins" sans-serif;
+  }
+  .socials {
+    float: left;
+  }
+  .socials a {
+    border-radius: 40px;
+  }
 }
