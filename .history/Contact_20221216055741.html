@@ -8,8 +8,8 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <title>pizzeria | Gallery display</title>
-    <link rel="stylesheet" href="CSS/Gallery.css" />
+    <link rel="stylesheet" href="CSS/Contact.css" />
+    <title>Pizzeria | contact display</title>
     <link rel="shortcut icon" href="img/pizza logo.png" type="image/x-icon" />
   </head>
   <body>
@@ -21,8 +21,8 @@
             <li><a href="index.html">HOME</a></li>
             <li><a href="About.html">ABOUT</a></li>
             <li><a href="Menu.html">MENU</a></li>
-            <li><a href="#">GALLERY</a></li>
-            <li><a href="Contact.html">CONTACT</a></li>
+            <li><a href="Gallerry.html">GALLERY</a></li>
+            <li><a href="#">CONTACT</a></li>
           </ul>
           <a href="#" class="order-btn">START ORDER</a>
           <img
@@ -35,23 +35,29 @@
       </div>
     </header>
 
-    <!-- galry display -->
-    <main class="galry-display">
-      <div class="container">
-        <div class="img-list">
-          <img src="img/Pizza cabin11.jpeg" alt="" />
-          <img src="img/burger.jpg" alt="" />
-          <img src="img/Pizza cabin12.png" alt="" />
-          <img src="img/Pizza cabin14.png" alt="" />
-          <img src="img/pizza maker01.jpg" alt="" />
-          <img src="img/Pizza cabin20.jpg" alt="" />
-          <img src="img/pizza maker02.jpg" alt="" />
-          <img src="img/Pizza cabin13.png" alt="" />
-          <img src="img/Pizza cabin14.png" alt="" />
-          <img src="img/Pizza cabin10.jpeg" alt="" />
-        </div>
+    <!-- this is the contact -->
+    <section>
+      <div class="container-contact">
+        <h1>GET IN TOUCH</h1>
+        <form>
+          <div class="contact-details">
+            <label for="name">Your Name</label>
+            <input type="text" name="name" required />
+          </div>
+          <div class="contact-details">
+            <label for="email">Your Email</label>
+            <input type="text" name="email" required />
+          </div>
+          <div class="contact-details">
+            <label for="msg">Your Message</label>
+            <textarea name="msg" id="" cols="40" rows="9" required></textarea>
+          </div>
+          <div class="contact-details">
+            <button><a href="#">Submit</a></button>
+          </div>
+        </form>
       </div>
-    </main>
+    </section>
 
     <!-- footer -->
     <footer class="main-footer">
@@ -74,11 +80,11 @@
         <div class="quick-links">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="Home.html">Home</a></li>
             <li><a href="About.html">About</a></li>
-            <li><a href="Menu.html">Menu</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="Gallerry.html">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
         <br />
@@ -98,7 +104,6 @@
         </div>
       </div>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
